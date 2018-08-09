@@ -1,3 +1,7 @@
+//popover shows 5 notifications when toggled
+//notifications from api call based on logged in user
+//onClick of button shows 10 more notifications with each click of button allowing scroll
+
 import React from 'react';
 import * as notificationsService from "../../services/notifications.service";
 import { Popover, Overlay, ButtonToolbar } from 'react-bootstrap';
