@@ -71,7 +71,7 @@ class MessagesDetail extends Component {
 
         <div id="senderId" className={"form-group " + (this.state.errors.senderId ? "has-error" : '')}>
           <label id="senderIdLabel"
-            className="col-sm-3 control-label" htmlFor="senderId">Sender's Id:</label>
+            className="col-sm-3 control-label" htmlFor="senderId">Senders Id:</label>
           <div className="col-sm-9 col-lg-7">
             <input
               type="text"
