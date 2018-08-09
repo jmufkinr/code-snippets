@@ -1,11 +1,7 @@
-//Popover gets data from api call
-//Popover shows 5 notifications initially
-//onClick of show 10 more button allows 10 mored notifications to be added to popover with scroll capabilities
-
 import React from 'react';
 import * as notificationsService from "../../services/notifications.service";
 import { Popover, Overlay, ButtonToolbar } from 'react-bootstrap';
-import "./NotificationsModal.css"
+import "./NotificationsPopover.css"
 
 const popoverStyle = {
   width: '300px',
@@ -41,7 +37,7 @@ const scroll = {
   height: '537px',
   overflow: 'scroll'
 }
-class NotificationsModal extends React.Component {
+class NotificationsPopover extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -80,7 +76,8 @@ class NotificationsModal extends React.Component {
 
   isReadBtn(e, event) {
     
-// removing for brevity
+//removing for brevity
+
   }
 
   showPopover = e => {
@@ -178,4 +175,4 @@ class NotificationsModal extends React.Component {
     )
   }
 }
-export default NotificationsModal; 
+export default NotificationsPopover; 
