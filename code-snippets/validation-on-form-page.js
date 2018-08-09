@@ -67,7 +67,7 @@ class MessagesDetail extends Component {
     return (
       <React.Fragment>
 
-        {/* removing for brevity */}
+       
 
         <div id="senderId" className={"form-group " + (this.state.errors.senderId ? "has-error" : '')}>
           <label id="senderIdLabel"
@@ -123,7 +123,7 @@ class MessagesDetail extends Component {
           </div>
           {this.state.errors && <div className="asterisk">{this.state.errors.message}</div>}
         </div>
-        {/* removing for brevity              */}
+        {/* removing for brevity */}
       </React.Fragment>
     );
   }
