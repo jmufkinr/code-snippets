@@ -67,7 +67,7 @@ class MessagesDetail extends Component {
     return (
       <React.Fragment>
 
-       
+        {/* removing for brevity */}
 
         <div id="senderId" className={"form-group " + (this.state.errors.senderId ? "has-error" : '')}>
           <label id="senderIdLabel"
@@ -79,7 +79,7 @@ class MessagesDetail extends Component {
               ref="senderId"
               id="senderId"
               className="form-control"
-              placeholder="Needs 24 Digit Sender's Id"
+              placeholder="Needs 24 Digit Senders Id"
               value={this.state.formData.senderId}
               onChange={this.submitHandler}
               required
