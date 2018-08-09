@@ -89,7 +89,7 @@ class MessagesDetail extends Component {
           {this.state.errors && <div className="asterisk">{this.state.errors.senderId}</div>}
         </div>
         <div id="recipientId" className={"form-group " + (this.state.errors.recipientId ? "has-error" : '')}>
-          <label id="recipientIdLabel" className="col-sm-3 control-label" htmlFor="recipientId">Recipient's Id:</label>
+          <label id="recipientIdLabel" className="col-sm-3 control-label" htmlFor="recipientId">Recipients Id:</label>
           <div className="col-sm-9 col-lg-7">
             <input
               type="text"
