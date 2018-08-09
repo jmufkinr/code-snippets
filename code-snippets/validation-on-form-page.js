@@ -88,7 +88,6 @@ class MessagesDetail extends Component {
           </div>
           {this.state.errors && <div className="asterisk">{this.state.errors.senderId}</div>}
         </div>
-
         <div id="recipientId" className={"form-group " + (this.state.errors.recipientId ? "has-error" : '')}>
           <label id="recipientIdLabel" className="col-sm-3 control-label" htmlFor="recipientId">Recipient's Id:</label>
           <div className="col-sm-9 col-lg-7">
@@ -107,7 +106,6 @@ class MessagesDetail extends Component {
           </div>
           {this.state.errors && <div className="asterisk">{this.state.errors.recipientId}</div>}
         </div>
-
         <div id="message" className={"form-group " + (this.state.errors.message ? "has-error" : '')}>
           <label id="messageLabel" className="col-sm-3 control-label" htmlFor="message">Message:</label>
           <div className="col-sm-9 col-lg-7">
@@ -123,13 +121,11 @@ class MessagesDetail extends Component {
               required
             />
           </div>
-          {this.state.errors && <div className="asterisk">{this.state.errors.message}</div>}                    </div>
-
+          {this.state.errors && <div className="asterisk">{this.state.errors.message}</div>}
+        </div>
         {/* removing for brevity              */}
-
       </React.Fragment>
     );
   }
 }
-
 export default MessagesDetail;
